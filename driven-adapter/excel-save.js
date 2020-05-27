@@ -85,11 +85,13 @@ function writeElement(worksheet, style, element, index) {
   worksheet.cell(index, 5).string( getValue(element.parentesco) ).style(style);
   worksheet.cell(index, 6).string( getValue(element.contacto) ).style(style);
   worksheet.cell(index, 7).string( getValue(element.municipio_procedencia) ).style(style);
-  worksheet.cell(index, 8).string( getDate(element.nacimiento) ).style(style);
+  // worksheet.cell(index, 8).string( getDate(element.nacimiento) ).style(style);
+  worksheet.cell(index, 8).string( '' ).style(style);
   worksheet.cell(index, 9).string( getValue(element.genero) ).style(style);
   worksheet.cell(index, 10).string( getValue(element.etnia) ).style(style);
   worksheet.cell(index, 11).string( getValue(element.discapacidad) ).style(style);
-  worksheet.cell(index, 12).string( calculateAge(element.nacimiento) ).style(style);
+  // worksheet.cell(index, 12).string( calculateAge(element.nacimiento) ).style(style);
+  worksheet.cell(index, 12).string( '' ).style(style);
   worksheet.cell(index, 13).string( getValue(element.hecho_victimizante) ).style(style);
   worksheet.cell(index, 14).string( getValue(element.sisben_3) ).style(style);
   worksheet.cell(index, 15).string( getValue(element.sisben_4) ).style(style);
